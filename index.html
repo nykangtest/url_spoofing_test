@@ -2,24 +2,13 @@
   <head>
   </head>
   <body>
-    nykang test2 <br>
-    
-    <!-- Default Statcounter code for nykang_test
-    https://nykangtest.github.io/sw_test/index.html -->
-    <script type="text/javascript">
-    var sc_project=12792408; 
-    var sc_invisible=1; 
-    var sc_security="49bfe2a1"; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="site stats"
-    href="https://statcounter.com/" target="_blank"><img class="statcounter"
-    src="https://c.statcounter.com/12792408/0/49bfe2a1/1/" alt="site stats"
-    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-    <!-- End of Statcounter Code -->
-    <a href="https://statcounter.com/p12792408/?guest=1">View My Stats</a>
-    
+    <script type="application/javascript">
+    function getIP(json) {
+      document.write("My public IP address is: ", json.ip);
+    }
+</script>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
   </body>
   
 </html>
